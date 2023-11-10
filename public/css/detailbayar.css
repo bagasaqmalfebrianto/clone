@@ -39,7 +39,7 @@ header{
     padding: 15px 9%;
     z-index: 100000S;
     border-bottom: 1px solid #ddd;
-    background-color: #2F37A4;
+    background-color: #0198a3;
    
 }
 
@@ -246,10 +246,45 @@ header{
     cursor: pointer;
 }
 
+.container-btn {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 50px;
+  }
+
+  .back-button {
+    font-size: 15px;
+    padding: 5px 15px; 
+    background-color: #a19f9b; 
+    color: #000000; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  
+    /* Efek hover saat mengarahkan kursor ke tombol */
+    &:hover {
+      background-color: #504e4b;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  
+  /* Gaya tambahan jika diperlukan */
+  .back-button.secondary {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  /* Gaya tambahan jika tombol dalam keadaan aktif */
+  .back-button.active {
+    background-color: #28a745;
+  }
+
 
 /* FOOTER STYLE */
 .footer-distributed{
-	background: #2F37A4;
+	background: #0198a3;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -459,7 +494,7 @@ header{
         left: -100%;
         width: 300px;
         height: 100vh;
-        background: #2F37A4;
+        background: #0198a3;
         display: flex;
         align-items: center;
         flex-direction: column;

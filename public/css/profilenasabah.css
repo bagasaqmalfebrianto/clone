@@ -1,0 +1,772 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: black;
+}
+
+
+
+
+
+.pay{
+    color: #000000;
+}
+
+.pay:hover{
+    color: #0198a3;
+    text-decoration: none;
+}
+
+.inner-main-nav ul li a:hover{
+    color: #F2BD59;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: 0.6s;
+    padding: 15px 9%;
+    z-index: 100000S;
+    border-bottom: 1px solid #ddd;
+    background-color: #0198a3;
+   
+}
+
+.inner-main-nav {
+    max-width: 1170px;
+    margin: auto;
+   
+}
+
+.inner-main-nav ul {
+    text-align: right;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.inner-main-nav ul li {
+    float: none;
+    display: inline-block;
+}
+.inner-main-nav ul li:nth-child(1),
+.inner-main-nav ul li:nth-child(2),
+.inner-main-nav ul li:nth-child(3),
+.inner-main-nav ul li:nth-child(4)
+{
+    float: left;
+}
+
+.inner-main-nav ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.inner-main-nav ul i{
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo:hover{
+    color: #F2BD59;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.login{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.login:hover {
+    cursor: pointer;
+    color: #F2BD59;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+.inner-main-nav img {
+    border-radius: 50%;
+    width: 30px;
+}
+
+/* Polis */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.img-left {
+    margin-left: 50px;
+    margin-right: 100px; 
+    max-width: 250px; 
+}
+
+
+.polis {
+    padding-top: 8%;
+}
+.main {
+    font-size: 28px;
+    padding: 0 100px;
+    width: 100%;
+}
+.main img {
+    border-radius: 50%;
+    width: 100%;
+}
+.main h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 20px 0 20px 50px;
+}
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 200px;
+    width: 50%;
+}
+
+.card3 {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 370px;
+}
+
+.edit-profile-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px; /* Adjust the top value as needed to position the button vertically */
+    right: 10px; /* Adjust the right value as needed to position the button horizontally */
+}
+
+.edit-profile-button:hover {
+    background-color: #2779bd;
+}
+
+/* Gaya dasar untuk tombol di dalam tabel */
+.table-button {
+    padding: 5px 15px; 
+    background-color: #F2BD59; 
+    color: #000000; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  
+    /* Efek hover saat mengarahkan kursor ke tombol */
+    &:hover {
+      background-color: #b17300;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  
+  /* Gaya tambahan jika diperlukan */
+  .table-button.secondary {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  /* Gaya tambahan jika tombol dalam keadaan aktif */
+  .table-button.active {
+    background-color: #28a745;
+  }
+
+  .table-button1 {
+    padding: 5px 15px; 
+    background-color: #28a745; 
+    color: #000000; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  
+    /* Efek hover saat mengarahkan kursor ke tombol */
+    &:hover {
+      background-color: #006d1a;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  
+  /* Gaya tambahan jika diperlukan */
+  .table-button1.secondary {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  /* Gaya tambahan jika tombol dalam keadaan aktif */
+  .table-button1.active {
+    background-color: #28a745;
+  }
+
+  
+  
+
+
+/* end */
+
+.polis-info {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    margin: 30px; 
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* End */
+
+/* DAta Polis*/
+.main2 {
+    font-size: 28px;
+    padding: 0 100px;
+    width: 100%;
+}
+.main2 .card2 {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 20px 0 20px;
+}
+.main2 h2{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-wrapper{
+    margin: 10px 50px 50px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #000000;
+    background: #c7f1fd;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #000000;
+    background: #c7f1fd;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.search-bar {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.search-input {
+    padding: 2px; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px; 
+    width: 200px; 
+}
+
+.page {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pages {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.current {
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+.page.larger {
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.page.larger:hover {
+    text-decoration: underline;
+}
+
+.ri-skip-right-line {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+/* FOOTER STYLE */
+.footer-distributed{
+	background: #0198a3;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  rgb(255, 255, 255);
+    
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #f8f8f8;
+	margin: 20px 0 12px;
+	padding: 0;
+    font-style: inherit;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #ffffff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 15px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+#menu-icon {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1300px) {
+    .inner-main-nav ul li a {
+        margin: 0 15px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    header {
+        border-bottom: 0;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .inner-main-nav ul li a {
+        padding: 0 0 15px;
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    .inner-main-nav ul {
+        margin: 0;
+        padding: 20px 0;
+    }
+    .login{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    .inner-main-nav{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 300px;
+        height: 100vh;
+        background: #0198a3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 30px;
+        transition: all .55s ease;
+    }
+    .inner-main-nav a{
+        margin-right: 0;
+        margin: 2px 0;
+    }
+    .inner-main-nav.open{
+        left: 0;
+    }
+    .logo {
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .inner-main-nav ul li {
+        display: block;
+        margin: 10px 0;
+        padding-top: 30px;
+    }
+
+
+    .content-wrapper {
+        flex-direction: column; 
+    }
+
+    .polis{
+        padding-top: 15%;
+    }
+
+    .img-left {
+        margin: 0 auto 20px; 
+        max-width: 250px; 
+    }
+
+    .main {
+        font-size: 18px; 
+        padding: 0 20px; 
+    }
+
+    .main .card {
+        padding: 20px; 
+    }
+
+    .card3 {
+        width: 100%; 
+        margin: 0; 
+    }
+
+    .main2 {
+        font-size: 18px; 
+        padding: 0 20px; 
+    }
+
+    .main2 .card2 {
+        padding: 20px; 
+    }
+}
+
+/* Footer */
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}   
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; 
+    }
+
+    .polis{
+        padding-top: 15%;
+    }
+
+    .img-left {
+        margin: 0 auto 20px; 
+        max-width: 200px; 
+    }
+
+    .main {
+        font-size: 18px; 
+        padding: 0 20px; 
+    }
+
+    .main .card {
+        padding: 20px; 
+    }
+
+    .card3 {
+        width: 100%; 
+        margin: 0; 
+    }
+}

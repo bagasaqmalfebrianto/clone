@@ -8,7 +8,7 @@
     <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('rpolis.css') }}">
+    <link rel="stylesheet" href="css/rpolis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 @endsection
@@ -17,34 +17,35 @@
 <div id="isi">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up float-right" style="color: black;"></i></button>
     <!-- Isi Ringkasan Polis 1 -->
+    
     <div class="card shadow">
       <h5 class="card-header bg-light" >Ringkasan Polis</h5>
       <div class="card-body">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-12 my-auto ">
-                    <img src="img/profile.png" class="mx-auto img-fluid d-block profilpic" alt="Profil">    
+                    <img src="img/profile.png" class="mx-auto img-fluid d-block profilpic" alt="Profil">
                 </div>
 
 
                 <div class="col-md mx-auto">
 
-                    
+
                         <div class="row" id="nama">
                             <div class="col-md-12">
                               <p style="color: black" class="text-center font-weight-bold text-md-left"> Andrian | 000000136651</p>
                             </div>
                         </div>
-                    
 
-                    
+
+
                         <div class="row">
                             <div class="col-md-6 col-sm-12 col-lg-4" id="email">
                                 <p style="color: black" class="text-center font-weight-bold text-md-left">E-mail : andrian@gmail.com</p>
                                 <p style="color: black" class="text-center font-weight-bold text-md-left">Jenis Kelamin : Laki - Laki</p>
                             </div>
-                             
-                        </div>    
+
+                        </div>
 
                     <div class="col-md text-center">
                         <div class="row cardlac text-center justify-content-center justify-content-md-start ">
@@ -54,12 +55,12 @@
                                     <b class="card-title">Nomor Loyality Card</b>
                                     <p class="card-text">082067300033411</p>
                                 </div>
-                              
+
                             </div>
 
                             <div class="card text-center LC" style="margin-bottom: 1%;margin-right: 1%">
                                 <div class="col-sm-12 col-md-12">
-                                    <b class="card-title">Polis Aktif</b> 
+                                    <b class="card-title">Polis Aktif</b>
                                     <p class="card-text">1</p>
                                 </div>
                             </div>
@@ -69,19 +70,19 @@
                                     <b class="card-title">Polis Tidak Aktif</b>
                                     <p class="card-text">1</p>
                                 </div>
-                              
+
                             </div>
 
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
-            
+
             </div>
-            
+
         </div>
-        
+
       </div>
     </div>
     <!--Akhir Isi Ringkasan Polis 1 -->
@@ -138,7 +139,7 @@
                           <td><button type="button" class="btn btn-warning btn-sm font-weight-bold" data-toggle="modal" data-target="#datapolis">Detail</button></td>
                           <td><button class="btn btn-warning btn-sm font-weight-bold" role="button" href="" disabled>Bayar</button></td>
                         </tr>
-                        
+
                       </tbody>
                     </table>
                   </div>

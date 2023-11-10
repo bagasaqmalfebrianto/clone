@@ -1,0 +1,398 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: black;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px 1px 25px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #FFCC33;
+    color: black;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #FFCC33;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #FFCC33;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+
+
+#sidebar ul.componentsmenu {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.componentsmenu a{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.active a{
+
+    text-decoration: none;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: white;
+    background: #333538;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #333538;
+}
+
+.sub{
+    background-color: #f7ba02;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.dropdown-item:hover {
+        color: white;
+        background-color: #FFCC33;
+    }
+
+.subsub{
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #e6ac00;
+}
+
+ul.menu2{
+    background: #FFCC33;
+}
+
+.line_verikal{
+        border-left: 1px solid #ddd;
+        height: 5vh;
+        width: 0px;
+    }
+
+.line_verikal1{
+        border-left: 1px solid #ddd;
+        height: 105vh;
+        width: 0px;
+    }
+
+.akun{
+    color: gray;
+    font-size: 14px;
+}
+
+.form-control:focus {
+        border-color: #FFCC33;
+        box-shadow: 0 0 0 0.1rem #FFCC33;
+} 
+
+[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {
+    display: none;
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #f7ba02;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: grey !important;
+    color: #fff !important;
+}
+
+.img-profile{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 0px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#userDropdown:hover { 
+    background-color: inherit;
+    outline-color: yellow; 
+    color: grey;
+}
+
+#userDropdown:focus { 
+   border-style: none !important;
+   outline-color: yellow;
+   background-color: inherit;
+   color: grey;
+}
+
+#userDropdown:active{ 
+   border-style: none !important;
+   outline-color: yellow;
+   background-color: inherit;
+}
+
+a:focus, a:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+#content.active {
+    width: 100%;
+}
+
+#isi{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td,tr{
+   font-size: 15px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #FFCC33;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  opacity: 0.7;
+  border-radius: 40px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  color: white;
+  opacity: 0.9;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  padding-right: 5px;
+}
+
+
+/* ---------------------------------------------------
+    Modal
+----------------------------------------------------- */
+.isi p{
+    padding: 5px 20px 0px 20px;
+    font-size: 13px;
+}
+
+.inbox{
+    border: solid 1px #d5d7e0;
+    border-radius: 8px;
+    border-top: 0;
+}
+.inbox li{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 0px;
+    border-left: none;
+    border-right: none;
+
+}
+
+.progress-pesan, .alert-pesan {
+    margin: 15px;
+}
+
+.pass5, .alertpass {
+    margin: 15px;
+}
+
+.alertpass {
+    display: none;
+}
+
+.alert-pesan {
+    display: none;
+}
+
+#nama{
+    color: black;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    td,tr{
+        font-size: 13px;
+    }
+    .reveal{
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .LC{
+        width: 160px;
+    }
+}

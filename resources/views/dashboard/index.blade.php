@@ -5,13 +5,14 @@
     <meta Bname="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>@yield('title')</title>
 
 
-    @yield('css')
+
+    {{-- @yield('css') --}}
+    <link rel="stylesheet" href="\css\dashboard.css">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="style2.css">
+    {{-- <link rel="stylesheet" href="style2.css"> --}}
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -39,8 +40,8 @@
                 <li><a href="#">Iklan & Layanan</a></li>
                 <li><a href="#">Tentang Kami</a></li>
                 <i class="ri-mail-unread-line"></i>
-                <a href="ProfilPolis1" class="login">Bae Suzy</a>
-                <img src="img/doona3.jpeg">
+                <li><a href="ProfilPolis1" class="login">Bae Suzy</a></li>
+                <img src="images/doona3.jpeg">
               </ul>
           </div>
           <div class="bx bx-menu" id="menu-icon"></div>
@@ -87,11 +88,11 @@
                         </div>
                         <div class="wrapper">
                               <div class="img-hover-zoom">
-                                  <img src="img/life.jpg">
+                                  <img src="images/life.jpg">
                                   <div class="overlay-text">Life Insurance</div>
                               </div>
                               <div class="img-hover-zoom2">
-                                  <img src="img/finansial2.jpg">
+                                  <img src="images/finansial2.jpg">
                                   <div class="overlay-text">Financial Insurance</div>
                               </div>
                         </div>
@@ -112,7 +113,7 @@
                             <a href="#" class="cta2">Get Started Now</a>
                           </div>
                           <div class="about-img">
-                              <img src="img/asuransi.jpg" alt="Tentang Kami">
+                              <img src="images/asuransi.jpg" alt="Tentang Kami">
                           </div>
                         </div>
                       </section>
