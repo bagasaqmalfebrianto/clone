@@ -1,0 +1,59 @@
+
+/* ---------------------------------------------------
+    KONTEN
+----------------------------------------------------- */
+
+
+
+
+#nama{
+    margin-top: 4%;
+    font-size: 14px;
+}
+
+
+#email{
+    font-size: 12px;
+}
+
+.lac{
+    margin-top: 2%;
+    font-size: 12px;
+}
+
+
+
+h5.card-header{
+	font-weight: bold;
+	color: black;
+}
+
+.cardlac p,b{
+    font-size: 12px;
+}
+
+.cardlac{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.page-item .active{
+    background-color: black;
+}
+
+img.profilpic{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    
+}
+
+.table {
+    color: black;
+}
+
+@media (max-width: 768px) {
+	.cardlac{
+		d
+	}
+}
